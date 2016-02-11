@@ -1,5 +1,6 @@
 /**
  * Created by cagekira on 1/29/16.
+ * Leetcode VersionNumber
  */
 public class VersionNumber {
     public static void main(String[] args){
@@ -33,5 +34,4 @@ public class VersionNumber {
         }
         return result;
     }
-
 }
