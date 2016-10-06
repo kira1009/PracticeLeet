@@ -44,4 +44,14 @@ Number: [`397`](https://leetcode.com/problems/integer-replacement/) Category: Ma
 Solution: for even number just divide it by two and make counter plus 1, for odd number if it is not 3, test n+1 whether can be divided by 4, if so make next number n + 1 else make it n - 1.
 Assume n = 2k + 1, (n + 1)/2 is k + 1, (n - 1)/2 is k, whether k or k + 1 is even and even number makes shorter path, so we will test (n + 1)/4
 
-Number: []
+Number: [`39`](https://leetcode.com/problems/combination-sum/) [`40`](https://leetcode.com/problems/combination-sum-ii/) [`216`](https://leetcode.com/problems/combination-sum-iii/) Category: Backtrack, DP
+Solution: 39. somehow like 401, using backtracking we need to limit the boundary which is the remainder less than 0. And the termination criteria that remainder equals 0.
+In the iteration of the recursion the element which added in the list should be removed after testing the results with such starting sequence.
+40. a bit different from 39, first the recursion call must be index + 1 for each call helper, second in order to eliminate the duplicated results we have to record every previous added element.
+216. a easier one, the numbers starts from 1 to 9. Using backtracking, like 39, every time you index increase by 1.
+
+Number: [`409`](https://leetcode.com/problems/longest-palindrome/) Category: String, Palindrome
+Solution: first count the number of appearances of each character for each character if the number is even we just add its number else if is odd and larger than 2 just add the number minus 1.
+At last if the result is less than the string's length it means there is at least one odd character so add 1 to the result.
+
+Nu
