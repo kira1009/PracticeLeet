@@ -54,4 +54,14 @@ Number: [`409`](https://leetcode.com/problems/longest-palindrome/) Category: Str
 Solution: first count the number of appearances of each character for each character if the number is even we just add its number else if is odd and larger than 2 just add the number minus 1.
 At last if the result is less than the string's length it means there is at least one odd character so add 1 to the result.
 
-Nu
+Number: [`22`](https://leetcode.com/problems/generate-parentheses/) Category: Backtracking
+Solution: using backtracking the termination criteria is the string's length equal to 2n. If left parentheses is less than n add ( to the current string for the recursion,
+if left parentheses is n or right is smaller than left then add ) to the recursion.
+
+Number: [`137`](https://leetcode.com/problems/single-number-ii/) Category: Bit Manipulation
+Solution: one = (one ^ num) & ~two; two = (two ^ num) & ~one; one record the digit appeared once, two record the digit appeared twice if 3 times two will return to 0.
+
+Number: [`241`](https://leetcode.com/problems/different-ways-to-add-parentheses/) Category: Divide and Conquer
+Solution: go through the input string, when a symbol is met, divide it into a previous part and a post part then parse the previous and post ones separately and get the result list.
+Do (+-*) for each element in the two lists and store their results into an output list and return. To make the calculation faster use a Map to memorize the calculated <String, List> pair.
+
