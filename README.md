@@ -77,7 +77,8 @@ Number: [`5`](https://leetcode.com/problems/longest-palindromic-substring/) Cate
 Solution: Iterate throw the array and consider the ith element as the middle of the palindrome and use two pointers to move different directions of the string find the longest palindrome and update the maximum length and the start position of the string.
  
 Number: [`413`](https://leetcode.com/problems/arithmetic-slices/) Category: DP  
-Solution: If the ith element is equal to the previous gap this means all the slices in ith element will grow by one, the sum is 
+Solution: If the ith element is equal to the previous gap this means all the slices in ith element will grow by one, for 5 continuous numbers the sum is 4 + 3 + 2 + 1 which is the sum.  
+
 Number: [`239`]  
 Number: [`419`]  
 Number: [`309`]  
