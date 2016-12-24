@@ -63,5 +63,27 @@ Number: [`241`](https://leetcode.com/problems/different-ways-to-add-parentheses/
 Solution: go through the input string, when a symbol is met, divide it into a previous part and a post part then parse the previous and post ones separately and get the result list.
 Do (+-*) for each element in the two lists and store their results into an output list and return. To make the calculation faster use a Map to memorize the calculated <String, List> pair.
 
-Number: [`108`](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) Category: DFS
-Solution:
+Number: [`108`](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) Category: DFS  
+Solution: Divide the array into 3 parts. Current value: the middle value; previous numbers of middle value; post numbers of middle value. Using recursion generate Node n, its left is smaller node, right is bigger node.
+
+Number: [`394`](https://leetcode.com/problems/decode-string/) Category: DFS, Stack  
+Solution: 1.use stack, store the number of iterations of string and string in [] into 2 stacks. When ] is met get the Stringbuilder in the strStack and append the i * str in [] then set the current stringbuilder to its result.  
+2. Using dfs, when '[' is met call dfs passing the remaining string and current index, when ']' is met return the parsed string.
+
+Number: [`96`](https://leetcode.com/problems/unique-binary-search-trees/) Category: DP  
+Solution: Use DP, by analyze the example we can see for a n nodes tree its children can be left: 0, right: n-1; left: 1, right: n-2; left: 2, right: n-3;...... So we use bottom up method to calculate the n nodes tree's result.
+
+Number: [`5`](https://leetcode.com/problems/longest-palindromic-substring/) Category: String  
+Solution: Iterate throw the array and consider the ith element as the middle of the palindrome and use two pointers to move different directions of the string find the longest palindrome and update the maximum length and the start position of the string.
+ 
+Number: [`413`](https://leetcode.com/problems/arithmetic-slices/) Category: DP  
+Solution: If the ith element is equal to the previous gap this means all the slices in ith element will grow by one, the sum is 
+Number: [`239`]  
+Number: [`419`]  
+Number: [`309`]  
+Number: [`89`]  
+Number: [`62`]  
+Number: [`35`]  
+Number: [`153`]  
+Number: [`199`]  
+Number: [`173`]  
